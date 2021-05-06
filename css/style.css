@@ -65,16 +65,19 @@
 .container section .button-container ul {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .container section .button-container ul li {
   list-style: none;
-  padding: 0.4em 0.7em;
+  padding: 0.4em 0;
   margin-right: -6px;
   font-size: 6em;
   display: inline-block;
   color: #FFFFFF;
   font-weight: 100;
+  width: 33.333%;
+  text-align: center;
 }
 
 .container section aside {
@@ -197,15 +200,6 @@
   }
   .number-background4 {
     border-left: 0.3em solid #BFBFBF;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .container {
-    width: 73%;
-  }
-  .container section .button-container ul li {
-    padding: 0.5em 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */

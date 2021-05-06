@@ -61,14 +61,18 @@ $button-background: #72C3DC;
                 ul {
                     margin: 0;
                     padding: 0;
+                    width: 100%;
                     li {
                         list-style: none;
-                        padding: 0.4em 0.7em;
+                        padding: 0.4em 0;
                         margin-right: -6px;
                         font-size: 6em;
                         display: inline-block;
-                        color: $color-desktop;
+                        color: #FFFFFF;
                         font-weight: 100;
+                        width: 33.333%;
+                        text-align: center;
+                        
                     }
             }
         }
@@ -176,18 +180,5 @@ $button-background: #72C3DC;
     
     .number-background4 {
         @include border($background-color4);
-    }
-  }
-
-  @media screen and (min-width: 1400px) {
-    .container{
-        width: 73%;
-        section {
-            .button-container{
-                ul li {
-                        padding: 0.5em 1em;
-                    }
-            }
-        }
     }
   }

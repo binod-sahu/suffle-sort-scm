@@ -1,8 +1,15 @@
-body {
-  color: #FF0000;
+.number-background1 {
+  background-color: #6F98A8;
 }
 
-.test {
-  color: red;
+.number-background2 {
+  background-color: #2B8EAD;
 }
-/*# sourceMappingURL=style.css.map */
+
+.number-background3 {
+  background-color: #2F454E;
+}
+
+.number-background4 {
+  background-color: #BFBFBF;
+}

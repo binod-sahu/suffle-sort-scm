@@ -5,10 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suffle and Sort Page</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.scss" />
     <script src="./js/sort.js"></script>
 </head>
 <body>
-    <h1>Hellow world</h1>
-    <div class="test" onclick=test()>Binod Sahu</div>
+    <div class="container">
+        <header>Suffle amd Sort</header>
+    </div>
+    <section>
+        <div class="button-container">
+            <ul>
+                <li class="number-background1">1</li>
+                <li class="number-background2">2</li>
+                <li class="number-background3">3</li>
+                <li class="number-background2">4</li>
+                <li class="number-background5">5</li>
+                <li class="number-background4">6</li>
+                <li class="number-background4">7</li>
+                <li class="number-background1">8</li>
+                <li class="number-background3">9</li>
+            </ul>  
+        </div>
+        <aside>
+            <button id="shuffle" type="button" onclick="suffleNode()" class="btn blue active">Shuffle</button>
+	        <button type="button" onclick="sortNode()" class="btn blue" >Sort</button>
+        </aside>
+    </section>
+    <footer>
+		<p>Shuffel and Sort by {{ Binod Sahu }}</p>
+	</footer>
 </body>
 </html>

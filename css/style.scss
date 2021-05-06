@@ -1,5 +1,26 @@
-$red: #FF0000;
-body { color:$red; }
-.test {
-    color: red;
+$background-color1: #6F98A8;
+$background-color2: #2B8EAD;
+$background-color3: #2F454E;
+$background-color4: #BFBFBF;
+
+$color1: #000000;
+$color2: #333333; 
+$color3: #FFFFFF;
+$color4: #EFEFEF;
+$color5: #72C3DC;
+
+.number-background1 {
+    background-color: $background-color1;
+}
+
+.number-background2 {
+    background-color: $background-color2;
+}
+
+.number-background3 {
+    background-color: $background-color3;
+}
+
+.number-background4 {
+    background-color: $background-color4;
 }

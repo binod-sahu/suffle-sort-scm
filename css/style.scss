@@ -8,20 +8,28 @@ $border-color: #333333;
 $background-body: #EFEFEF;
 $button-background: #72C3DC;
 
+@mixin background($color) {
+    background-color: $color;
+}
+
+@mixin border($color) {
+    border-left: 0.3em solid $color;
+}
+
 .number-background1 {
-    background-color: $background-color1;
+    @include background($background-color1);
 }
 
 .number-background2 {
-    background-color: $background-color2;
+    @include background($background-color2);
 }
 
 .number-background3 {
-    background-color: $background-color3;
+    @include background($background-color3);
 }
 
 .number-background4 {
-    background-color: $background-color4;
+    @include background($background-color4);
 }
 
 .container {
@@ -101,3 +109,72 @@ $button-background: #72C3DC;
         text-align: center;
     }
 }
+
+@media screen and (max-width: 960px) {
+    body {
+        background: $color-mobile;
+    }
+    .container{
+        background: $color-mobile;
+        width: 95%;
+        header {
+            color: $background-body;
+            border-bottom: none;
+        }
+        section {
+            flex-direction: column-reverse;
+            width: 100%;
+            background-color: $color-desktop;
+            .button-container{
+                padding: 0 20px;
+                margin-top: 10px;
+                ul {
+                    width: 100%;
+                    li {
+                        list-style: none;
+                        padding: 0.1em;
+                        display: block;
+                        margin: 0;
+                        color: #333;
+                        font-size: 2.7em;
+                        text-align: center;
+                        background: $background-body;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+            aside {
+                width: 100%;
+                flex-direction: row;
+                justify-content: center;
+                .btn {
+                    overflow: visible;
+                    padding: 15px 25px;
+                    display: inline-block;
+                    margin: 10px;
+                    width: 135px;
+                }
+            
+            }
+        }
+        footer {
+          background-color: $color-desktop;
+          padding-bottom: 0px;
+        }
+    }
+    .number-background1 {
+        @include border($background-color1);
+    }
+    
+    .number-background2 {
+        @include border($background-color2);
+    }
+    
+    .number-background3 {
+        @include border($background-color3);
+    }
+    
+    .number-background4 {
+        @include border($background-color4);
+    }
+  }

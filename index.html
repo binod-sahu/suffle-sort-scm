@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suffle and Sort Page</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/reset.scss" />
     <script src="./js/sort.js"></script>
 </head>
 <body>
@@ -26,8 +25,8 @@
             </ul>  
         </div>
         <aside>
-            <button id="shuffle" type="button" onclick="suffleNode()" class="btn blue">Shuffle</button>
-            <button id="reset" type="button" onclick="sortNode()" class="btn blue" >Sort</button>
+            <button id="shuffle" type="button" onclick="suffleNode(event)" class="btn blue">Shuffle</button>
+            <button id="reset" type="button" onclick="suffleNode(event)" class="btn blue" >Sort</button>
         </aside>
     </section>
     <footer>

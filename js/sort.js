@@ -6,27 +6,22 @@ const getShuffledArr = a => {
     return a;
 };
 
-const suffleNode = () => {
+const suffleNode = (event) => {
     const list = document.getElementById("nodeList");
-    let nodes = list.children;
     let i = 0;
-    nodes = Array.prototype.slice.call(nodes);
-    nodes = getShuffledArr(nodes);
+    const id = event.target.id;
+    let nodes = list.children;
+    if (id === 'suffle') {
+        nodes = Array.prototype.slice.call(nodes);
+        nodes = getShuffledArr(nodes);
+    } 
+    if (id === 'reset') {
+        nodes = Array.prototype.slice.call(nodes);
+        nodes = nodes.sort(function(a, b){return a.innerText-b.innerText});
+    }
     while(i < nodes.length)
     {
         list.appendChild(nodes[i]);
         ++i;
     }
 } 
-const sortNode = () => {
-    const list = document.getElementById("nodeList");
-    let nodes = list.children;
-    let i = 0;
-    nodes = Array.prototype.slice.call(nodes);
-    nodes = nodes.sort(function(a, b){return a.innerText-b.innerText});;
-    while(i < nodes.length)
-    {
-        list.appendChild(nodes[i]);
-        ++i;
-    }
-}

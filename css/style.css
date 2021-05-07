@@ -111,6 +111,17 @@
   -webkit-transition: All 250ms ease;
   transition: All 250ms ease;
   padding: 0.8em 2em;
+  cursor: pointer;
+}
+
+.container section aside .btn:active {
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-transition: All 250ms ease;
+  transition: All 250ms ease;
 }
 
 .container section aside .btn.blue {
@@ -167,6 +178,7 @@
     text-align: center;
     background: #EFEFEF;
     margin-bottom: 8px;
+    width: 97%;
   }
   .container section aside {
     width: 100%;

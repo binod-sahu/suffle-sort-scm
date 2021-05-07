@@ -95,6 +95,14 @@ $button-background: #72C3DC;
                 margin: 25px 22px 0 10px;
                 transition: All 250ms ease;
                 padding: 0.8em 2em;
+                cursor: pointer;
+            }
+            .btn:active {
+                position: relative;
+                top: 5px;
+                cursor: pointer;
+                box-shadow: none !important;
+                transition: All 250ms ease;
             }
             .btn.blue {
                 background: $button-background;
@@ -144,6 +152,7 @@ $button-background: #72C3DC;
                         text-align: center;
                         background: $background-body;
                         margin-bottom: 8px;
+                        width: 97%;
                     }
                 }
             }
